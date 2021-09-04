@@ -1,0 +1,17 @@
+@import "./assets//style/base";
+
+html,
+body {
+  height: 100%;
+}
+
+app-icon {
+    display: flex;
+}
+
+app-loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

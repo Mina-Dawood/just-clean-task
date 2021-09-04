@@ -1,0 +1,17 @@
+<div class="drop-down">
+    <div class="drop-down__selected" (click)="toggle()">
+        <app-icon [iconPath]="selectedItem?.icon"></app-icon>
+        <span>{{selectedItem?.name}}</span>
+        <app-icon class="drop-down__selected--arrow" iconPath="/assets/images/icons/arrow.svg"></app-icon>
+    </div>
+    <div class="drop-down__list" *ngIf="open">
+        <ul>
+            <li *ngFor="let item of list" (click)="selectItem(item)">
+                <div class="drop-down__list--item" [ngClass]="{'drop-down__list--selected': item?.value === selectedItem?.value}">
+                    <app-icon [iconPath]="item?.icon"></app-icon>
+                    <span>{{item?.name}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

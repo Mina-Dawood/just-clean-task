@@ -1,0 +1,54 @@
+@import "../../../../assets/style/variables";
+
+.drop-down {
+    position: relative;
+    font-size: 1.5rem;
+
+    &__selected {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 15rem;
+        cursor: pointer;
+
+        &--arrow {
+            transform: rotateX(180deg);
+        }
+    }
+
+    &__list {
+        position: absolute;
+        width: 25.3rem;
+        right: 0;
+        background-color: $white;
+        text-align: left;
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0 24px 48px 0 hsl(0deg 0% 77% / 38%);
+        margin-top: 1rem;
+        
+        ul {
+            list-style-type: none;
+        }
+
+        &--item {
+            padding: 1.5rem 1rem;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: $back-color;
+            }
+
+            app-icon {
+                margin-right: 1rem;
+            }
+        }
+
+        &--selected {
+            background-color: $back-color;
+        }
+    }
+}

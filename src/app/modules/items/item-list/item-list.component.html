@@ -1,0 +1,7 @@
+<div class="item-list">
+    <div class="item-list__title">{{'item-list.title' | translate}}</div>
+    <div *ngIf="!isLoading" class="item-list__cards">
+        <app-card class="item-list__cards--card" *ngFor="let card of mappedCards" [cardData]="card"></app-card>
+    </div>
+    <app-loader *ngIf="isLoading"></app-loader>
+</div>
