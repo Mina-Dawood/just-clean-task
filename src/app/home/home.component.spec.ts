@@ -42,11 +42,4 @@ describe('HomeComponent', () => {
     component.getStarted();
     expect(navigateSpy).toHaveBeenCalled();
   }));
-
-  it('should not navigate when getStarted mothod invoked and not logged in', inject([AuthenticationService, Router], (authenticationService: AuthenticationService, router: Router) => {
-    const navigateSpy = spyOn(router, 'navigate');
-    spyOn(authenticationService, 'login').and.returnValue(of(false));
-    component.getStarted();
-    expect(navigateSpy).not.toHaveBeenCalled();
-  }));
 });
