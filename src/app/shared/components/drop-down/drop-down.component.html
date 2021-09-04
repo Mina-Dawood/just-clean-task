@@ -4,7 +4,7 @@
         <span>{{selectedItem?.name}}</span>
         <app-icon class="drop-down__selected--arrow" iconPath="/assets/images/icons/arrow.svg"></app-icon>
     </div>
-    <div class="drop-down__list" *ngIf="open">
+    <div class="drop-down__list" [ngClass]="{'drop-down__list--hide': !open}">
         <ul>
             <li *ngFor="let item of list" (click)="selectItem(item)">
                 <div class="drop-down__list--item" [ngClass]="{'drop-down__list--selected': item?.value === selectedItem?.value}">
