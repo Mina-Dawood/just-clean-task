@@ -1,5 +1,5 @@
 export enum Currency {
-    KW = 'KWD',
+    KW = 'KD',
     UAE = 'AED',
     BH = 'BHD',
     QA = 'QAR',
