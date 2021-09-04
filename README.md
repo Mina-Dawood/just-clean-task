@@ -54,7 +54,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 1. Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 2. Open `index.html` of code coverage from this path: `coverage/just-clean-task/index.html`.
-3. ![Code Coverage](https://github.com/Mina-Dawood/just-clean-task/blob/master/src/docs/code-coverage.jpg)
+ ![Code Coverage](https://github.com/Mina-Dawood/just-clean-task/blob/master/src/docs/code-coverage.jpg)
 
 
 # Thank You
