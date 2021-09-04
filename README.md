@@ -48,7 +48,7 @@
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/just-clean-task` directory.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/just-clean-task` directory.
 
 ## How to run unit test
 
