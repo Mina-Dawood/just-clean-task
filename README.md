@@ -21,12 +21,12 @@
 
 ## Assumptions
 
-1. We have home page to enter to the app.
+1. `Home Page` to enter item list page (Lazy Loading Module).
 2. `Get Started` button in home page simulating user login.
 3. `Authentication Guard` is added to prevent accessing on item list page until user clicked on `Get Started`, Then it should be directed to home page.
 4. `JWT Interceptor` is added to intercept any request and add `Authorization & Content-Type` headers to the request.
 5. `Localization` is added for English only, but the implementation is built to serve multi languages.
-6. No Pagination on item list page.
+6. No pagination on item list page.
 
 
 ## Technology & Libraries
