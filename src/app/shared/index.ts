@@ -6,3 +6,4 @@ export * from './services';
 export * from './interfaces';
 export * from './guards';
 export * from './pipes';
+export * from './mocks';

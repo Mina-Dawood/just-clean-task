@@ -21,9 +21,9 @@
             justify-content: center;
             flex: 25%;
             max-width: 25%;
-            @media (max-width: 1023px) {
-                flex: 50%;
-                max-width: 50%;
+            @media (max-width: 1024px) {
+                flex: 33.3%;
+                max-width: 33.3%;
             }
         }
     }

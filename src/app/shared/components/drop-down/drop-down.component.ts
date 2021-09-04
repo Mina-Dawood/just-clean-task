@@ -7,7 +7,7 @@ import { IDropDown } from '@app/shared';
   styleUrls: ['./drop-down.component.scss']
 })
 export class DropDownComponent implements OnInit {
-  @Input() list: Array<IDropDown> = [];
+  @Input() list: Array<IDropDown> | null = [];
   @Output() change: EventEmitter<IDropDown> = new EventEmitter<IDropDown>();
 
   open: boolean = false;

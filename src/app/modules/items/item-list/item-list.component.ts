@@ -36,7 +36,7 @@ export class ItemListComponent implements OnInit, OnDestroy {
     this.mappedCards = items.map(item => ({
       image: item.icon,
       title: item.name,
-      secondTitle: `${pipe.transform(item.price, this.itemsService.selectedCountry.decimal)} ${this.itemsService.selectedCountry.currency}`
+      secondTitle: `${pipe.transform(item.price, this.itemsService.selectedCountry?.decimal)} ${this.itemsService.selectedCountry.currency}`
     }));
   }
 
