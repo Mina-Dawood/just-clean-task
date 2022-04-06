@@ -13,10 +13,16 @@
         padding-bottom: 1rem;
         margin-bottom: 5rem;
         border-bottom: 0.1rem solid $line-color;
+        position: fixed;
+        background-color: $white;
+        top: 0;
+        padding-top: 1rem;
     }
 
     &__item-list {
         width: 100%;
         flex: 1;
+        margin-top: 3rem;
+        overflow-y: scroll;
     }
 }
